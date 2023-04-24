@@ -1,16 +1,17 @@
-const form = document.querySelector('form')
-const submit = document.querySelector('button')
+function exibirMensagem() {
+    const nome = document.getElementById("nome").value;
+    const idade = document.getElementById("idade").value;
+    const linguagem = document.getElementById("linguagem").value;
+    const gosta = document.getElementById("gosta").value;
 
-form.addEventListener('button', (evento) => {
-    evento.preventDefault()
+    const msg = `"Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!"`;
 
-    const nome = document.querySelector('#idade').value
+    document.getElementById("mensagem").innerHTML = msg;
 
-    const idade = document.querySelector('#idade').value
-
-    const linguagem = document.querySelector('#linguagem').value
-})
-
-submit.addEventListener("click", (evento) => {
-    console.log("teste")
-})
+    if (gosta == 1){
+      document.getElementById("mensagem").innerHTML += "<br>Muito bom! Continue estudando e você terá muito sucesso.";
+    }
+    if (gosta == 2){
+      document.getElementById("mensagem").innerHTML += "<br>Ahh que pena... Já tentou aprender outras linguagens?";
+    }
+}

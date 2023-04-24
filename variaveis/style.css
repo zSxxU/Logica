@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#1c00bd, #0066ff);
+    background: #0066ff;
     color: white;
     font-family: 'Bebas Neue', cursive;
 }
@@ -39,6 +39,14 @@ h2 {
     text-align: center;
 }
 
+.formulario > select {
+    margin: 0 0 20px 0;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
 .formEnviar {
     display: flex;
     justify-content: center;
@@ -52,12 +60,20 @@ h2 {
     border: none;
     border-radius: 15px;
     padding: 5px 30px;
+    margin-bottom: 20px;
 }
 
 .botaoEnviar:hover {
     background-color: green;
 }
 
-.respostaSistema {
-    display: none;
+#mensagem {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 500px 0 500px;
+    color: black;
 }
