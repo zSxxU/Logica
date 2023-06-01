@@ -1,0 +1,29 @@
+:root {
+    --title-size: 3rem;
+    --paragraph-size: 2rem;
+    --bg-color: #001e5e;
+    --txt-color: #7284ab;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: var(--bg-color);
+}
+
+.container {
+    padding: 100px 20px;
+    border: solid 5px var(--txt-color);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: var(--title-size);
+    color: var(--txt-color);
+    text-align: center;
+}
+
+p {
+    font-size: var(--paragraph-size);
+    color: var(--txt-color);
+    text-align: center;
+}
