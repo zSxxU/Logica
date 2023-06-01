@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,13 @@
 </head>
 <body>
     <section class="container">
-        <h1>Jogo da Adivinhação</h1>
-        <p>Escolha um número entre 1 e 10</p>
-        <div>
-
-        </div>
+        <h1>Adivinhe o número</h1>
+        <form>
+            <label for="numero">Digite um número de 1 a 10:</label>
+            <input type="number" id="numero" class="input-nmbr">
+            <input type="submit" id="enviar" class="input-enviar" value="Enviar" onclick="verificarNumero()">
+        </form>
+        <div id="msg" class="mensagem"></div>
     </section>
 </body>
 <script src="loop.js"></script>

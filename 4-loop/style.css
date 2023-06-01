@@ -2,7 +2,9 @@
     --title-size: 3rem;
     --paragraph-size: 2rem;
     --bg-color: #001e5e;
-    --txt-color: #7284ab;
+    --txt-color: #c6d8ff;
+    --btn-green: #16bb00;
+    --outline-green: #0d7200;
 }
 
 body {
@@ -26,4 +28,56 @@ p {
     font-size: var(--paragraph-size);
     color: var(--txt-color);
     text-align: center;
+    margin: 25px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: var(--paragraph-size);
+    color: var(--txt-color);
+    text-align: center;
+}
+
+.input-nmbr {
+    font-family: 'Kanit', sans-serif;
+    font-size: var(--paragraph-size);
+    color: var(--txt-color);
+    background: var(--bg-color);
+    border: solid 5px var(--txt-color);
+    border-radius: 10px;
+    width: 75px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.input-enviar {
+    font-family: 'Kanit', sans-serif;
+    font-size: var(--paragraph-size);
+    color: black;
+    background-color: var(--btn-green);
+    border: solid 5px var(--outline-green);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.botao-jogar {
+    font-family: 'Kanit', sans-serif;
+    font-size: var(--paragraph-size);
+    color: black;
+    background-color: var(--btn-green);
+    border: solid 5px var(--outline-green);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 25px 700px;
 }
