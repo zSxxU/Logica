@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #3a3a3a;
+    --bar-color: #999999;
+    --title-size: 56px;
+    --paragraph-size: 32px;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background: var(--bg-color);
+}
+
+main {
+    border: 1px solid var(--bar-color);
+    background-color: var(--bar-color);
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    margin: 100px 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 25px 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    gap: 10px;
+}
+
+input {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 3px solid var(--bg-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+select {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    border: 3px solid var(--bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.legenda {
+    font-size: 3rem;
+}
+
+.btn-adicionar {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    border: 1px solid #07d300;
+    background-color: #07d300;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.btn-adicionar:hover {
+    border: 1px solid #0a7c06;
+    background-color: #0a7c06;
+    color: white;
+}
+
+.lista-de-compras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-de-compras > ul {
+    text-align: center;
+}
+
+.lista-de-compras > ul > li {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
